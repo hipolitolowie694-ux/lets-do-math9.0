@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#21163e">
+  <title>Let's do Math!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" data-page="home">Let's do Math!</a>
+    <nav aria-label="Main navigation">
+      <button data-page="home">Home</button>
+      <button data-page="learn">Learn</button>
+      <button data-page="games">Games</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page active hero">
+      <p class="eyebrow">GRADE 9 MATHEMATICS</p>
+      <h1>Learn math. Practice. Have fun.</h1>
+      <p>Build your skills in Algebra, Geometry, Trigonometry, and Statistics.</p>
+      <button class="primary" data-page="learn">Start learning</button>
+    </section>
+
+    <section id="learn" class="page">
+      <p class="eyebrow">CHOOSE A TOPIC</p>
+      <h1>What do you want to practice?</h1>
+      <div class="topic-grid">
+        <button class="topic" data-topic="Algebra">Algebra <span>Equations and expressions</span></button>
+        <button class="topic" data-topic="Geometry">Geometry <span>Shapes, angles, and circles</span></button>
+        <button class="topic" data-topic="Trigonometry">Trigonometry <span>Triangles and ratios</span></button>
+        <button class="topic" data-topic="Statistics">Statistics <span>Data and measures</span></button>
+      </div>
+
+      <section id="practice-area" class="panel hidden" aria-live="polite">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">PRACTICE</p>
+            <h2 id="topic-title">Algebra</h2>
+          </div>
+          <button id="close-topic" class="back-button" type="button">← Topics</button>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Practice type">
+          <button class="mode selected" data-mode="Routine">Routine</button>
+          <button class="mode" data-mode="Non-routine">Non-routine</button>
+          <button class="mode" data-mode="Notes">Notes</button>
+        </div>
+        <div id="question-area"></div>
+      </section>
+    </section>
+
+    <section id="games" class="page">
+      <p class="eyebrow">MATH GAME CORNER</p>
+      <h1>Choose a game</h1>
+      <div class="topic-grid">
+        <div class="topic">Sudoku Mini-Game <span>Practice logical thinking</span></div>
+        <div class="topic">Chess 1v1 <span>Two players, one board</span></div>
+        <div class="topic">Challenge a Friend <span>Try a math challenge together</span></div>
+        <div class="topic">Math Tug of War <span>Answer questions to compete</span></div>
+      </div>
+      <p class="notice">These game cards are placeholders in this starter version. Their full game mechanics still need to be added.</p>
+    </section>
+  </main>
+
+  <footer>Let's do Math! · Grade 9 Mathematics</footer>
+  <script src="script.js"></script>
+</body>
+</html>
